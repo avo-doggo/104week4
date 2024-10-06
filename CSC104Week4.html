@@ -1,0 +1,41 @@
+<!--Jameson brown-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Meal Planner</title>
+    <!-- Link the external stylesheet -->
+    <link rel="stylesheet" href="WebsiteStyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Custom Meal Planner</h1>
+        <form id="mealPlanForm">
+            <label for="dietType">Diet Type:</label>
+            <select id="dietType" name="dietType" required>
+                <option value="">Select</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="vegan">Vegan</option>
+                <option value="keto">Keto</option>
+                <option value="paleo">Paleo</option>
+                <option value="omnivore">Omnivore</option>
+            </select>
+            
+            <label for="allergies">Food Allergies (comma-separated):</label>
+            <input type="text" id="allergies" name="allergies" placeholder="e.g., peanuts, gluten">
+            
+            <label for="calories">Daily Caloric Intake (optional):</label>
+            <input type="number" id="calories" name="calories" placeholder="2000">
+
+            <button type="submit">Generate Meal Plan</button>
+        </form>
+
+        <div id="mealPlanResults">
+            <!-- Meal plan and grocery list will be displayed here -->
+        </div>
+    </div>
+
+    <script src="WebsiteScript.js"></script>
+</body>
+</html>
